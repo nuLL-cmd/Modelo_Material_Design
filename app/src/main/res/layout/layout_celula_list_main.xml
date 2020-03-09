@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="70dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/card_celula_main">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relative_card_celula_main">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/agecalendar"
+                android:layout_centerVertical="true"
+                android:id="@+id/img_logo_celula"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_data_celula"
+                android:text="20-12-2019"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_toEndOf="@id/img_logo_celula"
+                android:layout_marginStart="10dp"
+                android:layout_alignTop="@id/img_logo_celula"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quitado"
+                android:textStyle="bold"
+                android:layout_toEndOf="@id/img_logo_celula"
+                android:layout_below="@id/txt_data_celula"
+                android:layout_marginStart="25sp"
+                android:id="@+id/txt_sit_celula"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
